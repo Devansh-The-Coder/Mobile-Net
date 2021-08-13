@@ -1,0 +1,46 @@
+
+<html>
+  <head>
+    <title>MobileNet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <center>
+    <div class="col-xs-12 header-div">
+      <h2>Random Identifier App </h2>
+      <img src="logo.gif" style="border-radius: 30px; width: 90px;"><br>
+      
+    </div><br><br><br><br><br><br>
+    <p class="pad">Trained with 1.5 billion images, created by WhiteHat Jr</p><br><br>
+    <div class="col-sm-6 col-xs-12 main_div"><label>Webcam view: </label> <br>
+    <div id="camera"></div>
+    <br>
+    <button class="button" onclick="Capture()">Capture Image</button>
+    </div>
+
+
+<div class="col-sm-6 ol-xs-12 main_div"><label>Output</label> <br>
+  <div id="output"></div>
+  <br>
+  <button class="button" onclick="Tell()">Proccess Image</button>
+  </div>
+    <div class="col-xs-12 footer_div">
+<h4 class="col-sm-6 col-xs-12"><img src="blub.gif" style="height: 70px; width: 70px;"><br>
+<span id="objectName" class="span"></span>
+</h4>
+    </div>
+<br>
+<br><br>
+    <footer><marquee class="footer">Created by: Devansh • Model Trained by: WhiteHatJr</marquee></footer>
+<script src="main.js"></script>
+  </body>
+</html>
